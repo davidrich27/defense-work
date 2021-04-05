@@ -1,0 +1,117 @@
+  
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.75in]{geometry}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+	\parindent=0pt% don't indent paragraphs in the title block
+	\centering
+	{\Large \bfseries\textsc{\@title}}
+	\HRule\par%
+	\textit{\@author \hfill \@date}
+	\par
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\title{Reviewer Response}
+\author{David H. Rich}
+\date{Grant Applicant}
+
+\begin{document}
+	\maketitle% prints the title block
+	\thispagestyle{empty}
+	\vspace{16pt}
+	
+	\section{Individual Critiques}
+	
+	\subsection{Reviewer \#1}
+		
+	\begin{itemize}
+		 \item 
+		 	\textbf{Intellectual Merit:} \\
+			 "The author proposes an alteration of the dynamic programming matrix that would improve its speed, but not reduce accuracy. No mention of how the improvements are made, or how current implementations function are given."
+			 
+			\textbf{Response:} \\
+			 I agree I could've been more clear on how I would implement the Cloud Search algorithm.  I expanded on this section and more clearly explained the differences between this and Forward-Backward.
+		
+		\item 
+			\textbf{Broader Impact:} \\
+			"The author does not necessarily point the reader towards an understanding
+			of how the work being done will make a broader impact. Reader's are left
+			wondering why existing methods could stand improvement in the first place,
+			more so how the suggested improvements would be implemented."
+			
+			\textbf{Response:} \\
+			I have made an effort to expand the Broader Impacts section and be more explicit on ways in which my work will effect the greater scientific community and society as a whole.
+		
+		\item 
+			\textbf{Summary:} \\
+			"Heuristic pruning seems like their is some good, but the author needs to provide
+			stronger details so a panel can determine its merits."
+			
+			\textbf{Response:} \\
+			I have expanded on the Introduction, Methods, and Assessment sections to try to better explain my work.
+			
+	\end{itemize}
+
+	\subsection{Reviewer \#2}
+	
+	\begin{itemize}
+		\item 
+			\textbf{Intellectual Merit:} \\
+			"The author proposes heuristically pruning of the dynamic programming matrix for the Forward-Backward algorithm which would improve speed without losing much sensitivity.  They fail to provide measures of speed and accuracy comparison between Forward-Backward and Viterbi so it is impossible to assess the scale of the problem or whether the proposed solution is reasonable."
+			
+			\textbf{Response:} \\
+			I have current accuracy data of MMseqs vs. HMMER for exact measures, but I felt that the hard numbers and the time needed to explain them would be better saved for later, and for now just speak in broad terms.  I did add the theoretical time complexity of the Forward-Backward vs. Cloud Search.
+		
+		\item 
+			\textbf{Broader Impact:} \\
+			"The author does not successfully make a case for the broader impacts of their proposal.  They suggect two software packages it could be implemented but does not make the case that those packages need this improvement or that such an improvement would provide broader benefits."
+			
+			\textbf{Response:} \\
+			I reworked my Broader Impacts section to better make my case.  I expanded on its potential consequences to society at large.  
+		
+		\item
+			\textbf{Summary:} \\
+			"The heuristic pruning seems potentially useful but the author does not provide enough information to make a determination on its merits."
+			
+			\textbf{Response:} \\
+			Again, I agree with the reviewer, and have done a substantial rewrite to better clarify the merits of my proposal.
+		
+	\end{itemize}
+
+	\subsection{Reviewer \#3}
+
+	\begin{itemize}
+		\item 
+			\textbf{Intellectual Merit:} \\
+			"The intellectual merit comes from the improvement in sequence alignment suites. The heuristic method for this improvement is explained though a deeper explanation would help."
+			
+			\textbf{Response:} \\
+			I expanded my Methods and Assessment section to try and better explain the steps I will take and the rationale behind the Cloud Search heuristics.
+		
+		\item 
+			\textbf{Broader Impact:} \\
+			"The impacts are largely focused on gene annotation."
+			
+			\textbf{Response:} \\
+			No critique.
+		
+		\item
+			\textbf{Summary:} \\
+			"The research seems doable with a clear goal. The proposal needs to be expanded with more background information and perhaps a better explanation of the impacts of the work."
+			
+			\textbf{Response:} \\
+			I have done some small edits to the Introduction, but have also expanded greatly on the Broader Impacts and Intellectual Merit sections.  My hope is this help to show my work's better context.
+		
+	\end{itemize}
+	
+
+	
+\end{document}
